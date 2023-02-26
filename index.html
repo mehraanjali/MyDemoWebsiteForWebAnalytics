@@ -1,0 +1,63 @@
+<html>
+<head>
+        <title> Web Analytics Website </title>
+        <link rel="stylesheet" href="style.css">
+</head>
+    
+<!-- https://youtu.be/znqUwx0b0HI -->
+<body>
+    <div class = "banner">
+        <div class="navbar">
+            <img src="lOGOS/1logo-transformed.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <h1>CUSTOMIZE YOUR SERVICES</h1>
+            <p><i>Select the services your want, and contact us for the packages</i></p>
+            
+            <div>
+                <button type="button" class="btn1" onclick="openPopup()"><span></span>Services</button>
+                 <div class="popup1" id="popup1">
+                    <img src="404-tick.png">
+                    <h2>Thank You!</h2>
+                    <p>Our Services Brochure has been sent to you...</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                    
+                </div>
+                
+                <button type="button" class="btn" id="Port" onclick="openPopup()"><span></span>Portfolio</button>
+                <div class="popup" id="popup">
+                    <img src="404-tick.png">
+                    <h2>Thank You!</h2>
+                    <p>Portfolio has been sent to you...</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!--<button id="alert-button" onclick="alert('The request has been approved!);">Approve</button>-->
+        
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+        
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
+        
+    </script>
+    </body>
+</html>
+
